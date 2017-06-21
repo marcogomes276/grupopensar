@@ -1,0 +1,19 @@
+*,*:before,*:after{
+	box-sizing:border-box;
+	position:relative;
+}
+html,body{
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+}
+
+img{
+	width: 150px;
+}
+nav ul{
+	display:flex;
+	justify-content:center;
+}
