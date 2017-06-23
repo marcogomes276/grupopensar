@@ -13,7 +13,34 @@ html,body{
 img{
 	width: 150px;
 }
-nav ul{
-	display:flex;
-	justify-content:center;
+#inicio{
+	width: 100%;
 }
+#inicio nav{
+	width:100%;
+	display: flex;
+	justify-content: center;		
+}
+#inicio nav ul{
+	display: flex;
+	list-style: none;
+}
+#inicio nav ul li{
+	font-size: 0.9em;
+	color: #00416d;
+	font-style: normal;
+	text-align: center;
+	line-height: 0.8em;
+	letter-spacing: 0em;
+	border: solid 1px #888;
+	border-radius: 20px;
+	margin-left: 10%;
+	background: #fff;
+	width: 150px;
+	padding: 5px 0;	
+	/*font-family: soucesanspro-regular;*/
+	
+
+
+}
+
