@@ -91,6 +91,7 @@ img{
 	line-height:1.68em;
 	letter-spacing: 0em;
 }
+
 #sobre div p{
 	color:#95989a;
 	font-style:normal;
@@ -101,35 +102,63 @@ img{
 #acoes {
 	height: 200vh;
 	width: 100%;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content: center;
+	align-content: flex-start;
 }
 #acoes h2{
+	margin-left: 40px;
 /*	font-family: sourcesanspro-bold;*/
-	font-size: 0.94em;
+	font-size: 2.00em;
 	color: #95989a;
 	font-style:normal;
 	text-align: left;
 	line-height: 1.61em;
 	letter-spacing: 0em;
 }
+#acoes div{
+	width:40%;
+	height: 100vh;
+}
+
+
 #acoes div h3{
+	margin-left: 40px;
 /*	font-family: sourcesanspro-semibold;*/
-	font-size: 1.56em;
+	font-size: 1.00em;
 	color: #95989a;
 	font-style: normal;
 	text-align: left;
 	line-height: 1.34em;
 	letter-spacing: 0em;
 }
-#acoes div p{
 
+#acoes .primeira-div-acoes{
+	width: 100%;
+
+	display: flex;
+	flex-flow: column wrap;
+	
 }
+#acoes .primeira-div-acoes p{
+	width: 30%;
+	margin-left: 40px;
+	
+}
+#acoes .primeira-div-acoes .video{
+	width:60%;
+	height: 400px;
+	background:yellow;
+}
+
 #contato{ 
 	height: 100vh;
 	width: 100%;
-	background: url(Assets/minacommike.jpg) no-repeat;
+	background: url(Assets/image-footer.jpg) no-repeat;
 	background-size: 100%;
  }
- #contato div{
+ #contato div{		
  	background: #fff;
  	width: 30%;
  	border-radius: 20px;
@@ -144,7 +173,7 @@ img{
  	letter-spacing: 0em;
  }
  #contato div p{
- 	font-family: soucesanspro-regular;
+ 	/*font-family: soucesanspro-regular;*/
  	font-size: 1.25em;
  	color: #95989a;
  	font-style: normal;
