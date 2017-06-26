@@ -8,6 +8,7 @@ html,body{
 	justify-content: center;
 	align-items: center;
 	width:100%;
+/*	background: red;*/
 }
 
 img{
@@ -101,7 +102,53 @@ img{
 	height: 200vh;
 	width: 100%;
 }
-#contatos{ 
+#acoes h2{
+/*	font-family: sourcesanspro-bold;*/
+	font-size: 0.94em;
+	color: #95989a;
+	font-style:normal;
+	text-align: left;
+	line-height: 1.61em;
+	letter-spacing: 0em;
+}
+#acoes div h3{
+/*	font-family: sourcesanspro-semibold;*/
+	font-size: 1.56em;
+	color: #95989a;
+	font-style: normal;
+	text-align: left;
+	line-height: 1.34em;
+	letter-spacing: 0em;
+}
+#acoes div p{
+
+}
+#contato{ 
 	height: 100vh;
-	width: 100%;	
+	width: 100%;
+	background: url(Assets/minacommike.jpg) no-repeat;
+	background-size: 100%;
  }
+ #contato div{
+ 	background: #fff;
+ 	width: 30%;
+ 	border-radius: 20px;
+ }
+ #contato h4{
+ 	/*font-family: sourcesanspro-bold;*/
+ 	font-size: 1.88em;
+ 	color: #95989a;
+ 	font-style: normal;
+ 	text-align: left;
+ 	line-height: 1.61em;
+ 	letter-spacing: 0em;
+ }
+ #contato div p{
+ 	font-family: soucesanspro-regular;
+ 	font-size: 1.25em;
+ 	color: #95989a;
+ 	font-style: normal;
+ 	text-align: left;
+ 	line-height: 1.07em;
+ 	letter-spacing: 0em;
+ }		
