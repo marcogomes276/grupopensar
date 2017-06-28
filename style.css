@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+
 *,*:before,*:after{
 	box-sizing:border-box;
 	position:relative;
@@ -25,6 +27,7 @@ img{
 	width:100%;
 	position: fixed;
 	top:0;
+	z-index: 1;
 	display: flex;
 	justify-content: center;		
 
@@ -35,18 +38,19 @@ img{
 	padding-left: 0;
 }
 #inicio nav ul li{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
 	font-size: 0.9em;
-	color: #00416d;
 	font-style: normal;
 	text-align: center;
 	line-height: 0.8em;
+	color: #00416d;
 	border: solid 1px #888;
 	border-radius: 20px;
 	margin: 0 2.5%;
 	background: #fff;
 	width: 150px;
 	padding: 5px 0;	
-	/*font-family: soucesanspro-regular;*/
 }
 #inicio img{
 	width:50%;	
@@ -56,8 +60,9 @@ img{
 	position:absolute;
 	top:221px;
 	right: 15%;
-	width: 200px;
-	/*font-family:;*/
+	width: 250px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
 	color:#95989a;
 	font-style:normal;
 	text-align:left;
@@ -78,12 +83,17 @@ img{
 	background: #fff;
 	margin-right: 50px;
 	margin-bottom: 20px;
-	padding: 30px;
+	padding: 25px;
+	padding-top: 0;
 	border-radius: 10px;
 
 }
 #sobre div h2 {
 	margin: 0;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
 	font-size:1.88em;
 	color:#95989a;
 	font-style:normal;
@@ -93,10 +103,15 @@ img{
 }
 
 #sobre div p{
+	margin: 0;
+	margin-top: 7px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight:400;
+	font-size:0.9em;
 	color:#95989a;
 	font-style:normal;
 	text-align:left;
-	line-height:0.8em;
+	line-height:1.2em;
 	letter-spacing:0em;
 }
 #acoes {
@@ -108,24 +123,48 @@ img{
 	align-content: flex-start;
 }
 #acoes h2{
+	width:100%;
+	margin: 0;
+	margin-top: 60px;
 	margin-left: 40px;
-/*	font-family: sourcesanspro-bold;*/
-	font-size: 2.00em;
-	color: #95989a;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight:600;
+	font-size:1.88em;
+	color:#95989a;
 	font-style:normal;
-	text-align: left;
-	line-height: 1.61em;
+	text-align:left;
+	line-height:1.68em;
 	letter-spacing: 0em;
 }
 #acoes div{
-	width:40%;
-	height: 100vh;
+	width:35%;
+	max-height: 100vh;
+	margin:3% 4%;
+	/*background:blue;*/
 }
-
+#acoes div h3{
+	/*width:100%;*/
+}
+#acoes div p {
+	margin-top: 7px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight:400;
+	font-size:0.9em;
+	color:#95989a;
+	font-style:normal;
+	text-align:left;
+	line-height:1.2em;
+	letter-spacing:0em;
+}
+#acoes div img{
+	width:100%;
+}
 
 #acoes div h3{
 	margin-left: 40px;
-/*	font-family: sourcesanspro-semibold;*/
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight:700;
+	font-size:1.
 	font-size: 1.00em;
 	color: #95989a;
 	font-style: normal;
@@ -136,14 +175,23 @@ img{
 
 #acoes .primeira-div-acoes{
 	width: 100%;
-
+	margin: 0;
 	display: flex;
 	flex-flow: column wrap;
-	
 }
 #acoes .primeira-div-acoes p{
 	width: 30%;
+	margin: 0;
 	margin-left: 40px;
+	margin-top: 7px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight:400;
+	font-size:0.9em;
+	color:#95989a;
+	font-style:normal;
+	text-align:left;
+	line-height:1.2em;
+	letter-spacing:0em;
 	
 }
 #acoes .primeira-div-acoes .video{
