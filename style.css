@@ -10,7 +10,12 @@ html,body{
 	justify-content: center;
 	align-items: center;
 	width:100%;
-/*	background: red;*/
+	overflow: auto;
+}
+@media (max-width: 640px){
+	body{
+		overflow: hidden;
+	}
 }
 #inicio{
 	width: 100%;
@@ -20,20 +25,31 @@ html,body{
 	align-items: flex-start;
 }
 #inicio nav{
+	z-index: 1;
 	width:100%;
 	position: fixed;
 	top:0;
-	z-index: 1;
 	display: flex;
 	justify-content: center;		
-
 }
+
 #inicio nav ul{
 	display: flex;
 	list-style: none;
 	padding-left: 0;
 }
-#inicio nav ul li{
+#inicio nav ul a {
+	text-decoration: none;
+	margin: 0 2.5%;
+	width: 150px;
+}
+@media (max-width: 640px){
+	#inicio nav ul a {
+		margin: 0 1.5%;
+		width: 80px;
+	}
+}
+#inicio nav ul a li{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	font-size: 0.9em;
@@ -43,10 +59,14 @@ html,body{
 	color: #00416d;
 	border: solid 1px #888;
 	border-radius: 20px;
-	margin: 0 2.5%;
 	background: #fff;
-	width: 150px;
-	padding: 5px 0;	
+	padding: 5px 0;
+	width: 100%;
+}
+@media (max-width: 640px){
+	#inicio nav ul li{
+		margin: 0 10%;
+	}
 }
 #inicio img{
 	width:50%;	
@@ -190,10 +210,9 @@ html,body{
 	letter-spacing:0em;
 	
 }
-#acoes .primeira-div-acoes .video{
+#acoes .primeira-div-acoes video{
 	width:60%;
-	height: 400px;
-	background:yellow;
+	/*height: 400px;*/
 }
 
 #contato{ 
@@ -270,4 +289,6 @@ html,body{
  	text-align: left;
  	line-height: 1.07em;
  	letter-spacing: 0;
+ 	/*background: red;*/
+ 	padding-bottom: 
  }
