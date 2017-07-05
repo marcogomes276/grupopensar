@@ -12,7 +12,7 @@ html,body{
 	width:100%;
 	overflow: auto;
 }
-@media (max-width: 640px){
+@media(max-width:640px){
 	body{
 		overflow: hidden;
 	}
@@ -23,6 +23,7 @@ html,body{
 	display:flex;
 	justify-content: center;
 	align-items: flex-start;
+	flex-wrap: wrap;
 }
 #inicio nav{
 	z-index: 1;
@@ -30,11 +31,13 @@ html,body{
 	position: fixed;
 	top:0;
 	display: flex;
-	justify-content: center;		
+	justify-content: center;
+	align-items: center;		
 }
 
 #inicio nav ul{
 	display: flex;
+	justify-content: center;
 	list-style: none;
 	padding-left: 0;
 }
@@ -43,16 +46,15 @@ html,body{
 	margin: 0 2.5%;
 	width: 150px;
 }
-@media (max-width: 640px){
-	#inicio nav ul a {
-		margin: 0 1.5%;
-		width: 80px;
-	}
+@media(max-width: 640px){
+	#inicio nav ul a{
+		width: auto;
+	}	
 }
 #inicio nav ul a li{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
-	font-size: 0.9em;
+	font-size: 0.94em;
 	font-style: normal;
 	text-align: center;
 	line-height: 0.8em;
@@ -64,13 +66,19 @@ html,body{
 	width: 100%;
 }
 @media (max-width: 640px){
-	#inicio nav ul li{
-		margin: 0 10%;
+	#inicio nav ul a li{
+		padding: 10px;
+		font-size: 1.3em;
 	}
 }
 #inicio img{
 	width:50%;	
 	margin-top: 100px;
+}
+@media (max-width:640px){
+	#inicio img{
+		width: 100%;
+	}
 }
 #inicio p{
 	position:absolute;
@@ -85,6 +93,11 @@ html,body{
 	line-height:0.8em;
 	letter-spacing:0em;
 }
+@media (max-width: 640px){
+	#inicio p{
+		position: static;
+	}
+}
 #sobre{
 	height: 100vh;
 	width: 100%;
@@ -94,6 +107,14 @@ html,body{
 	justify-content: flex-end;
 	align-items: flex-end;
 }
+@media(max-width: 640px){
+	#sobre{
+		background-size: auto 100%;
+		background-position: center;
+		justify-content: center;
+		align-items: flex-start;	
+	}
+}
 #sobre div{
 	width:40%;
 	background: #fff;
@@ -102,7 +123,12 @@ html,body{
 	padding: 25px;
 	padding-top: 0;
 	border-radius: 10px;
-
+}
+@media (max-width: 640px){
+	#sobre div{
+		width: 82%;
+		margin: 0;
+	}
 }
 #sobre div h2 {
 	margin: 0;
@@ -129,6 +155,11 @@ html,body{
 	text-align:left;
 	line-height:1.2em;
 	letter-spacing:0em;
+}
+@media (max-width: 640px){
+	#sobre div p{
+		font-size: 0.9em;
+	}
 }
 #acoes {
 	height: 200vh;
