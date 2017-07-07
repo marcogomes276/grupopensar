@@ -99,35 +99,35 @@ html,body{
 	}
 }
 #sobre{
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 	background: url("Assets/fundo-sobre.jpg") no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
 }
-@media(max-width: 640px){
-	#sobre{
-		background-size: auto 100%;
-		background-position: center;
+@media (max-width: 640px) {
+	#sobre {
+		height: auto;
 		justify-content: center;
-		align-items: flex-start;	
+		align-items: center;
 	}
 }
 #sobre div{
 	width:40%;
 	background: #fff;
+	margin-top: 75px;
 	margin-right: 50px;
 	margin-bottom: 20px;
 	padding: 25px;
-	padding-top: 0;
-	border-radius: 10px;
+	border-radius: 5px;
 }
-@media (max-width: 640px){
+@media (max-width: 640px) {
 	#sobre div{
+		margin: 20px auto;
+		margin-top: 75px;
 		width: 82%;
-		margin: 0;
 	}
 }
 #sobre div h2 {
@@ -143,7 +143,13 @@ html,body{
 	line-height:1.68em;
 	letter-spacing: 0em;
 }
-
+@media (max-width: 640px) {
+	#sobre div h2 {
+		padding: 0;
+		margin: 0;
+		font-size:20px;
+	}
+}
 #sobre div p{
 	margin: 0;
 	margin-top: 7px;
@@ -162,13 +168,14 @@ html,body{
 	}
 }
 #acoes {
-	height: 200vh;
+	min-height:200vh; 
 	width: 100%;
 	display:flex;
 	flex-flow:row wrap;
 	justify-content: center;
 	align-content: flex-start;
 }
+
 #acoes h2{
 	width:100%;
 	margin: 0;
@@ -192,6 +199,7 @@ html,body{
 #acoes div h3{
 	/*width:100%;*/
 }
+
 #acoes div p {
 	margin-top: 7px;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -202,6 +210,12 @@ html,body{
 	text-align:left;
 	line-height:1.2em;
 	letter-spacing:0em;
+}
+@media(max-width:640px){
+	#acoes div p {
+		width:40px; 
+
+	}
 }
 #acoes div img{
 	width:100%;
