@@ -19,7 +19,7 @@ html,body{
 }
 #inicio{
 	width: 100%;
-	height:100vh;	
+	min-height:100vh;	
 	display:flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -175,7 +175,11 @@ html,body{
 	justify-content: center;
 	align-content: flex-start;
 }
-
+@media(max-width: 640px){
+	#acoes{
+		flex-flow: column nowrap;
+	}
+}
 #acoes h2{
 	width:100%;
 	margin: 0;
@@ -190,15 +194,27 @@ html,body{
 	line-height:1.68em;
 	letter-spacing: 0em;
 }
+@media(max-width:640px){
+	#acoes h2{
+		margin:0;
+	}
+}
 #acoes div{
 	width:35%;
 	max-height: 100vh;
 	margin:3% 4%;
 	/*background:blue;*/
 }
-#acoes div h3{
-	/*width:100%;*/
+@media(max-width: 640px){
+	#acoes div{
+		width: 100%;
+		min-height: 100vh;
+		margin: 3% 0; 	
+	}
 }
+/*#acoes div h3{
+	width:100%;
+}*/
 
 #acoes div p {
 	margin-top: 7px;
@@ -213,8 +229,8 @@ html,body{
 }
 @media(max-width:640px){
 	#acoes div p {
-		width:40px; 
-
+		/*width:150px; */
+		
 	}
 }
 #acoes div img{
@@ -225,7 +241,6 @@ html,body{
 	margin-left: 40px;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight:700;
-	font-size:1.
 	font-size: 1.00em;
 	color: #95989a;
 	font-style: normal;
@@ -240,6 +255,14 @@ html,body{
 	display: flex;
 	flex-flow: column wrap;
 }
+@media(max-width: 640px){
+	#acoes .primeira-div-acoes{
+		flex-wrap: nowrap;
+	}
+}
+/*#acoes .primeira-div-acoes h3{
+	width: 28%;
+}*/
 #acoes .primeira-div-acoes p{
 	width: 30%;
 	margin: 0;
@@ -253,18 +276,21 @@ html,body{
 	text-align:left;
 	line-height:1.2em;
 	letter-spacing:0em;
-	
+}
+@media(max-width: 640px){
+	#acoes .primeira-div-acoes p{
+		width: auto;
+	}
 }
 #acoes .primeira-div-acoes video{
 	width:60%;
-	/*height: 400px;*/
 }
 
 #contato{ 
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 	background: url(Assets/image-footer.jpg) no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
