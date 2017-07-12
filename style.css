@@ -249,6 +249,7 @@ html,body{
 	letter-spacing: 0em;
 }
 
+
 #acoes .primeira-div-acoes{
 	width: 100%;
 	margin: 0;
@@ -282,10 +283,20 @@ html,body{
 		width: auto;
 	}
 }
-#acoes .primeira-div-acoes video{
-	width:60%;
-}
 
+#acoes .primeira-div-acoes .video-mobile{
+	display: none;
+	width:100%;
+}
+@media (max-width: 640px){
+	#acoes .primeira-div-acoes .video-mobile{
+		display: block;
+		width:100%;
+	}
+	#acoes .primeira-div-acoes .video-desktop{
+		display: none;
+	}
+}
 #contato{ 
 	min-height: 100vh;
 	width: 100%;
@@ -304,7 +315,7 @@ html,body{
  	padding: 47px;
  	/*display: flex;
  	flex-direction: column;
- 	align-items: flex-start;*/
+] 	align-items: flex-start;*/
 
  }
  #contato div h2{
